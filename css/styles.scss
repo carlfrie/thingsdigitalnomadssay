@@ -1,0 +1,211 @@
+$font-header: Open Sans, sans-serif;
+$font-quote: Gentium Basic, serif;
+
+
+body {
+}
+
+.container-fluid {
+}
+
+.background {
+
+}
+
+/*** tansparent box ***/
+
+.transbox {
+  margin: 30px;
+  background-color: #BDBDBD;
+  max-width: 75%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: auto;
+  margin-top: 15%;
+  border-radius: 10px;
+  opacity: 0.9;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+/*** background image ***/
+
+#img-bg {
+  /* background: url('images/bangkok_expat_life.jpg'); */
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #img-bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+/*** typography ***/
+
+.main-text {
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  color: #303F9F;
+
+}
+
+.main-text h1 {
+  font-family: $font-header;
+  font-size: 400%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.main-text h2 {
+  font-family: $font-header;
+  text-transform: uppercase;
+  font-size: 300%;
+  text-align: center;
+}
+
+.body-text h3 {
+  font-family: $font-quote;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 20px;
+  color: #212121;
+}
+
+/*** button ***/
+
+.btn {
+	width:200px;
+	margin-top: 10px;
+	border:2px solid #303F9F;
+  border-radius: 4px;
+	color: #212121;
+  font-family: 'Open Sans', serif;
+	font-weight: bold;
+	padding:5px;
+	text-decoration: none;
+	text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background: #FFF;
+	color: #212121;
+}
+
+.btn:active {
+	cursor: pointer;
+}
+
+.btn {
+	display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#quote {
+  font-family: 'Gentium Basic', serif;
+  font-size: 2em;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background a {
+  color: #030632;
+  text-decoration: none;
+}
+
+.background a:hover {
+  color: #B21212;
+}
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+      .main-text h1 {
+        font-size: 175%;
+      }
+
+      .main-text h2 {
+        font-size: 150%;
+      }
+
+      .body-text h3{
+        font-size: 150%;
+      }
+
+      #quote {
+        font-size: 1em;
+      }
+
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+
+
+      .main-text h1 {
+        font-size: 150%;
+      }
+
+      .main-text h2 {
+        font-size: 150%;
+      }
+
+      .body-text h3{
+        font-size: 150%;
+      }
+
+      #quote {
+        font-size: 1em;
+      }
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+      .main-text h1 {
+        font-size: 150%;
+      }
+
+      .main-text h2 {
+        font-size: 150%;
+      }
+
+      .body-text h3{
+        font-size: 150%;
+      }
+
+      #quote {
+        font-size: 1em;
+      }
+
+
+    }
